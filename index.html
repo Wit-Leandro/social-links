@@ -12,23 +12,163 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {width: 275px;}
+    .attribution {padding-top: 10px;}
+   @media(max-width: 1440px){
+    body{
+      padding: 0 50% 0 50%;
+      text-align: center;
+      align-items: center;
+      background-color: black;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-style: normal 14pt;
+      color: white;
+    }
+
+    .botoes {
+      align-items: center;
+      background-color: rgb(18, 17, 17);
+      border-color: rgb(18, 17, 17);
+      width: 300px;
+      height: 500px;
+      border-radius: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      
+    }
+    img {
+      border-radius: 150px;
+      width: 75px;
+    }
+    button {
+      width: 275px;
+      height: 35px;
+      border-radius: 10px;
+      color: rgb(255, 255, 255);
+      background-color: #1c1c1c;
+      border-color: #1c1c1c;   
+      box-shadow: #1c1c1c;         
+    }
+  }
+    .subtitulo {
+      color: #00ff00
+    }
+    .paritalic {
+      font-style: italic;
+    }
+
+    @media(max-width: 375px){
+
+      body{
+      padding: 0 0 0 0;
+      text-align: center;
+      align-items: center;
+      background-color: black;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-style: normal 10pt;
+      color: white;
+    }
+
+    .botoes {
+      align-items: center;
+      background-color: rgb(18, 17, 17);
+      border-color: rgb(18, 17, 17);
+      width: 270px;
+      height: 520px;
+      border-radius: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      
+    }
+    img {
+      border-radius: 150px;
+      width: 100px;
+    }
+    button {
+      width: 245px;
+      height: 35px;
+      border-radius: 10px;
+      color: rgb(255, 255, 255);
+      background-color: #1c1c1c;
+      border-color: #1c1c1c;   
+      box-shadow: #1c1c1c;         
+    }
+  }
+
+
+  
   </style>
 </head>
 <body>
+  <div class="botoes">
+    <img src="assets/images/avatar-jessica.jpeg" alt="">
+    <h2>Jessica Randall</h2>
+    <p class="subtitulo">London, United Kingdom</p>
+    <p class="paritalic">"Front-end developer and avid reader."</p>
 
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
-
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
+    <button id="btom1">GitHub</button><br><br>
+    <button id="btom2">Frontend Mentor</button><br><br>
+    <button id="btom3">LinkedIn</button><br><br>
+    <button id="btom4">Twitter</button><br><br>
+    <button id="btom5">Instagram</button>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/Wit-Leandro?tab=repositories">Wit-Leandro</a>.
   </div>
+
+  <script>
+    var a = document.getElementById('btom1')
+    a.addEventListener('mouseenter', entrar1)
+    a.addEventListener('mouseout', saiu1)
+    function entrar1(){
+      a.style.backgroundColor = '#228b22'
+    }
+    function saiu1(){
+      a.style.backgroundColor = '#1c1c1c'
+    }
+
+    var b = document.getElementById('btom2')
+    b.addEventListener('mouseenter', entrar2)
+    b.addEventListener('mouseout', saiu2)
+    function entrar2(){
+      b.style.backgroundColor = '#228b22'
+    }
+    function saiu2(){
+      b.style.backgroundColor = '#1c1c1c'
+    }
+
+    var c = document.getElementById('btom3')
+    c.addEventListener('mouseenter', entrar3)
+    c.addEventListener('mouseout', saiu3)
+    function entrar3(){
+      c.style.backgroundColor = '#228b22'
+    }
+    function saiu3(){
+      c.style.backgroundColor = '#1c1c1c'
+    }
+
+    var d = document.getElementById('btom4')
+    d.addEventListener('mouseenter', entrar4)
+    d.addEventListener('mouseout', saiu4)
+    function entrar4(){
+      d.style.backgroundColor = '#228b22'
+    }
+    function saiu4(){
+      d.style.backgroundColor = '#1c1c1c'
+    }
+    
+    var e = document.getElementById('btom5')
+    e.addEventListener('mouseenter', entrar5)
+    e.addEventListener('mouseout', saiu5)
+    function entrar5(){
+      e.style.backgroundColor = '#228b22'
+    }
+    function saiu5(){
+      e.style.backgroundColor = '#1c1c1c'
+    }
+
+  </script>
 </body>
 </html>
